@@ -1,0 +1,26 @@
+.root {
+  height: 200px;
+  width: 200px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.root img {
+  max-width: 100%;
+  max-height: 100%;
+  position: absolute;
+  bottom: 0px;
+}
+
+.root img:first-child {
+  bottom: -150px;
+  opacity: 0;
+  transition: all 0.25s;
+}
+
+.root > img.active {
+  bottom: 0px;
+  opacity: 1;
+}
